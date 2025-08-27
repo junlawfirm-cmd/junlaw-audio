@@ -1,4 +1,5 @@
-<!doctype html>
+# Create the updated HTML file with relative paths and Card 4 JSON-LD added
+html = """<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -31,7 +32,7 @@
     /* Controls */
     .controls { display: grid; gap: 12px; grid-template-columns: 1fr; margin: 18px 0 6px; align-items: center; }
     .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
-    .tab { appearance: none; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 8px 12px; border-radius: 999px; cursor: pointer; font-size: 14px; }
+    .tab { appearance: none; border: 1px solid var(--line); background: #fff; color: #fff; padding: 8px 12px; border-radius: 999px; cursor: pointer; font-size: 14px; }
     .tab.active { background: var(--brand); color: #fff; border-color: var(--brand); }
     .search { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #fff; border: 1px solid var(--line); border-radius: 999px; }
     .search input { border: 0; outline: 0; width: 100%; font-size: 15px; }
@@ -88,12 +89,12 @@
         <div class="meta">
           <span class="badge ko" title="Language">KO</span>
           <span class="badge" title="Length">⏱ 04:12</span>
-          <span class="badge" title="Published">2025‑08‑15</span>
+          <span class="badge" title="Published">2025-08-15</span>
         </div>
         <h2 class="title" itemprop="name">예술가 NIW 자가진단 — 핵심 체크 5가지</h2>
         <p itemprop="description" class="desc">예술가의 EB‑2 NIW 준비를 위한 빠른 체크리스트와 서류 구성 요령.</p>
         <audio controls preload="none" itemprop="contentUrl">
-          <source src="/media/audio/niw-artist-checklist-ko.mp3" type="audio/mpeg" />
+          <source src="media/audio/niw-artist-checklist-ko.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <div class="tags" aria-label="Tags">
@@ -108,12 +109,12 @@
         <div class="meta">
           <span class="badge en" title="Language">EN</span>
           <span class="badge" title="Length">⏱ 05:06</span>
-          <span class="badge" title="Published">2025‑08‑12</span>
+          <span class="badge" title="Published">2025-08-12</span>
         </div>
         <h2 class="title" itemprop="name">EB‑2 NIW Overview — What USCIS Really Looks For</h2>
         <p itemprop="description" class="desc">Merits determination, evidence themes, and pitfalls to avoid.</p>
         <audio controls preload="none" itemprop="contentUrl">
-          <source src="/media/audio/eb2-niw-overview-en.mp3" type="audio/mpeg" />
+          <source src="media/audio/eb2-niw-overview-en.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <div class="tags" aria-label="Tags">
@@ -128,12 +129,12 @@
         <div class="meta">
           <span class="badge zh" title="Language">ZH</span>
           <span class="badge" title="Length">⏱ 03:28</span>
-          <span class="badge" title="Published">2025‑08‑08</span>
+          <span class="badge" title="Published">2025-08-08</span>
         </div>
         <h2 class="title" itemprop="name">印第安纳交通事故索赔与代理费简介</h2>
         <p itemprop="description" class="desc">人身伤害案件的收费方式与和解流程，避免常见误区的小贴士。</p>
         <audio controls preload="none" itemprop="contentUrl">
-          <source src="/media/audio/personal-injury-cn.mp3" type="audio/mpeg" />
+          <source src="media/audio/personal-injury-cn.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <div class="tags" aria-label="Tags">
@@ -141,29 +142,30 @@
           <span class="tag">Chinese</span>
         </div>
       </article>
+
       <!-- Card 4 (EN) -->
-<article class="card" data-lang="en" data-text="deportation removal indiana ice enforcement english en"
-         itemscope itemtype="https://schema.org/AudioObject">
-  <div class="meta">
-    <span class="badge en" title="Language">EN</span>
-    <span class="badge" title="Length">⏱ 04:00</span><!-- 필요 시 실제 길이로 교체 -->
-    <span class="badge" title="Published">2025-08-27</span><!-- 필요 시 실제 날짜로 교체 (YYYY-MM-DD) -->
-  </div>
-  <h2 class="title" itemprop="name">Increasing Deportation in Indiana</h2>
-  <p itemprop="description" class="desc">
-    Recent trends in removals, what’s driving enforcement, and practical steps for affected families in Indiana.
-  </p>
-  <audio controls preload="none" itemprop="contentUrl">
-    <source src="/media/audio/increasing-deportation-in-indiana-en.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
-  <div class="tags" aria-label="Tags">
-    <span class="tag">Deportation</span>
-    <span class="tag">Removal</span>
-    <span class="tag">Indiana</span>
-    <span class="tag">English</span>
-  </div>
-</article>
+      <article class="card" data-lang="en" data-text="deportation removal indiana ice enforcement english en"
+        itemscope itemtype="https://schema.org/AudioObject">
+        <div class="meta">
+          <span class="badge en" title="Language">EN</span>
+          <span class="badge" title="Length">⏱ 04:00</span>
+          <span class="badge" title="Published">2025-08-27</span>
+        </div>
+        <h2 class="title" itemprop="name">Increasing Deportation in Indiana</h2>
+        <p itemprop="description" class="desc">
+          Recent trends in removals, what’s driving enforcement, and practical steps for affected families in Indiana.
+        </p>
+        <audio controls preload="none" itemprop="contentUrl">
+          <source src="media/audio/increasing-deportation-in-indiana-en.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="tags" aria-label="Tags">
+          <span class="tag">Deportation</span>
+          <span class="tag">Removal</span>
+          <span class="tag">Indiana</span>
+          <span class="tag">English</span>
+        </div>
+      </article>
     </section>
 
     <section class="cta-bar" aria-label="Calls to action">
@@ -218,7 +220,7 @@
   ==========================
   HOW TO USE / CUSTOMIZE
   ==========================
-  1) Replace each <source src="/media/audio/...mp3"> with your actual MP3 URLs.
+  1) Replace each <source src="media/audio/...mp3"> with your actual MP3 URLs.
   2) Duplicate an <article class="card"> block to add more audio. Update:
      - data-lang (ko|en|zh),
      - data-text (keywords for search),
@@ -241,7 +243,7 @@
         "inLanguage": "ko",
         "duration": "PT4M12S",
         "uploadDate": "2025-08-15",
-        "contentUrl": "/media/audio/niw-artist-checklist-ko.mp3"
+        "contentUrl": "media/audio/niw-artist-checklist-ko.mp3"
       },
       {
         "@type": "AudioObject",
@@ -249,7 +251,7 @@
         "inLanguage": "en",
         "duration": "PT5M6S",
         "uploadDate": "2025-08-12",
-        "contentUrl": "/media/audio/eb2-niw-overview-en.mp3"
+        "contentUrl": "media/audio/eb2-niw-overview-en.mp3"
       },
       {
         "@type": "AudioObject",
@@ -257,10 +259,22 @@
         "inLanguage": "zh",
         "duration": "PT3M28S",
         "uploadDate": "2025-08-08",
-        "contentUrl": "/media/audio/personal-injury-cn.mp3"
+        "contentUrl": "media/audio/personal-injury-cn.mp3"
+      },
+      {
+        "@type": "AudioObject",
+        "name": "Increasing Deportation in Indiana",
+        "inLanguage": "en",
+        "duration": "PT4M0S",
+        "uploadDate": "2025-08-27",
+        "contentUrl": "media/audio/increasing-deportation-in-indiana-en.mp3"
       }
     ]
   }
   </script>
 </body>
 </html>
+"""
+path = "/mnt/data/index_relative.html"
+open(path, "w", encoding="utf-8").write(html)
+path
